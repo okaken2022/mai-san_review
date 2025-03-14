@@ -1,0 +1,57 @@
+@use "pages/about";
+@use "global/mixin" as*;
+
+$accentColor:#71C732;
+$baseColor:#EEEFEA;
+$grayColor:#686868;
+$darkgrayColor:#DBDBDB;
+$lightgrayColor:#B3B3B3;
+$greenColor:#2AA83A;
+$blackColor:#000000;
+$yellowColor:#DBFF0D;
+
+
+.about-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.about-image img{
+    width: 160px;
+    height: 160px;
+    @include tab{
+        width: 100px;
+        height:100px;
+    }
+}
+.about-text{
+    width: 65%;
+    line-height: 24px;
+    p{
+        padding-top: 20px;
+        line-height: 30px;
+        @include tab{
+            font-size: 16px;
+        }
+        @include sp{
+            font-size: 14px;
+        }
+    }
+}
+.about-text h3 {
+    font-size: 24px;
+    @include sp{
+        font-size: 16px;
+    }
+    }
+
+
+.about-section{
+    background-color: $baseColor;
+    font-size: 16px;
+    padding-bottom: 80px;
+}
+
+
+

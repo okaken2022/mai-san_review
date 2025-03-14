@@ -1,0 +1,27 @@
+.thanks-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.thanks-text {
+  text-align: center;
+  width: 100%;
+}
+
+.thanks-content p {
+  font-size: 20px;
+  line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .thanks-content p {
+    font-size: 16px;
+  }
+}
+
+.thanks-section {
+  height: 100vh;
+  background-color: #EEEFEA;
+}/*# sourceMappingURL=thanks.css.map */

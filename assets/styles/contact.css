@@ -1,0 +1,97 @@
+.contact-section-form {
+  background-color: #EEEFEA;
+  padding-bottom: 60px;
+}
+
+.contact-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .contact-contents p {
+    font-size: 14px;
+  }
+}
+
+.category-contact-section {
+  background-color: #EEEFEA;
+  padding-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+.contact-form textarea {
+  background-color: #ffffff;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 16px;
+  padding: 10px 10px;
+}
+
+.haveto {
+  color: #686868;
+}
+
+.haveto span {
+  background-color: #C7000B;
+  padding: 3px 8px;
+  color: #ffffff;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.wpcf7-validates-as-required,
+.wpcf7-validates-as-required,
+.wpcf7-validates-as-email {
+  background-color: #ffffff;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 16px;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px 10px;
+}
+@media screen and (max-width: 768px) {
+  .wpcf7-validates-as-required,
+  .wpcf7-validates-as-required,
+  .wpcf7-validates-as-email {
+    width: 100%;
+  }
+}
+
+.contact-form-check {
+  display: flex;
+  justify-content: center;
+  color: #686868;
+  margin-top: 80px;
+  width: 100%;
+}
+.contact-form-check p {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: 10px 10px;
+}
+
+.inquiry {
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .inquiry {
+    font-size: 14px;
+  }
+}
+.inquiry th, .inquiry td {
+  width: 600px;
+}
+.inquiry p {
+  padding-bottom: 10px;
+}
+
+.contact-confirm {
+  padding-bottom: 0;
+}/*# sourceMappingURL=contact.css.map */

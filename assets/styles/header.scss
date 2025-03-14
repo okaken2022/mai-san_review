@@ -1,0 +1,125 @@
+
+$accentColor:#71C732;
+$baseColor:#EEEFEA;
+$grayColor:#686868;
+$darkgrayColor:#DBDBDB;
+$lightgrayColor:#B3B3B3;
+$greenColor:#2AA83A;
+$blackColor:#000000;
+$yellowColor:#DBFF0D;
+$whiteColor:#ffffff;
+
+#header{
+    position: fixed;
+    background-color:white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    height: 80px;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+
+   }
+
+.navi-menu{
+    display: flex;
+    gap: 50px;
+}
+.menu-title{
+    color: $grayColor;
+    &:hover{
+        color: $blackColor;
+    }
+}
+.menu-title-contact{
+    color:$accentColor;
+    &:hover{
+        color: $greenColor;
+ }
+}
+
+
+@media screen and (max-width:768px){
+    .navi{
+        display: none;
+    }
+   .humberger{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+   }
+
+   .humberger span{
+    width: 30px;
+    height: 2px;
+    left: 5px;
+    background-color: $blackColor;
+    position: absolute;
+    z-index: 30;
+   }
+
+   .humberger span:nth-child(1){
+    top:10px;
+   }
+   .humberger span:nth-child(2){
+    top:20px;
+   }
+   .humberger span:nth-child(3){
+    top:30px;
+   }
+   .active .site-title {
+    display: none;
+   }
+   .active .humberger span{
+    transition: 0.5s;
+    z-index: 20;
+   }
+   .active .humberger span:nth-child(1){
+    transform: rotate(45deg);
+    top: 20px;
+   }
+   .active .humberger span:nth-child(2){
+    display: none;
+   }
+   .active .humberger span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 20px;
+   }
+   #header.active{
+    background-color: $darkgrayColor;
+   }
+   .active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $darkgrayColor;
+    height: 100vh;
+    z-index:100;
+   }
+   .active .navi{
+    display: flex;
+
+   }
+   .active .navi-menu{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    gap: 100px;
+    transform: translatex(-50%);
+    text-align: center;
+    background-color: $darkgrayColor;
+    width: 100%;
+    height:100vh;
+   }
+}

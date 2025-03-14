@@ -1,0 +1,261 @@
+@charset"UTF-8";
+
+@use "global/common";
+@use "global/config";
+@use "global/mixin" as*;
+@use "global/reset";
+@use "components";
+@use "layouts";
+@use "libs";
+@use "works";
+@use "service";
+@use "about";
+@use "contact";
+@use "thanks";
+@use "header";
+@use "footer";
+
+
+
+@font-face{
+    font-family: 'MyFont';
+    src: url('/assets/myfont.woff')format('wolf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+
+body {
+  font-family: 'Lexend Exa';
+}
+
+
+$accentColor:#71C732;
+$baseColor:#EEEFEA;
+$grayColor:#686868;
+$darkgrayColor:#DBDBDB;
+$lightgrayColor:#B3B3B3;
+$greenColor:#2AA83A;
+$blackColor:#000000;
+$yellowColor:#DBFF0D;
+$whiteColor:#ffffff;
+
+html{
+    font-size: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+img{
+    width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    padding: 0 40px;
+    @include tab{
+        padding:0 20px;
+    }
+}
+body{
+    position: relative;
+}
+
+.btn{
+    display: block;
+    width:200px ;
+    height: 40px;
+    line-height: 40px;
+    background-color: $accentColor;
+    color:$whiteColor ;
+    border: 1px solid $accentColor;
+    font-size: 16px;
+    text-align: center;
+    margin:36px auto;
+    box-sizing: border-box;
+    @include tab{
+        width: 100%;
+    }
+    &:hover{
+        background-color: $whiteColor;
+        color: $accentColor;
+        transition: 0.8s; 
+    }
+   a{
+    font-size: 16px;
+   }
+}
+
+.button-group{
+.btn{
+    margin-bottom: 0;
+    @include tab{
+        width: 100%;
+}
+    }
+}
+.btn-top{
+  margin-top: 0;  
+}
+
+#mainvisual {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+
+}
+.mainvisual-image img {
+    width: 100%;
+    height: 110vh; 
+    object-fit: cover;
+}
+
+.title-top{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.title-sub{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 92px;
+   
+}
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::before {
+    content: '';
+    position: absolute;
+    background-color: $yellowColor;
+    width: 60%; 
+    height: 48%; 
+    border-radius: 50%; 
+    top: 28%; 
+    left: 20%; 
+    z-index: 1;
+}
+.title-text p{
+   @include sp{
+    font-size: 16px;
+}
+}
+.title-text{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $grayColor;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    @include sp{
+        top: 65%;
+    }
+    @include tab{
+        top: 72%;
+        font-size: 10px;
+    }
+    @include pc{
+        font-size: 12px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 3px;
+        height:0;//最初は0
+        background-color: $yellowColor;
+        top: 7px;
+        left: -20px;
+        transition: height 0.3s ease-out; 
+        @include sp{
+            left: -10px;
+        }
+    }
+}
+
+.title-text.line-animate::before {
+    height: 108px; // 
+}
+.sec-title{
+    margin-bottom: 80px;
+    position: relative;
+}
+.sec-right-title{
+    text-align: right;
+}
+.sec-title-heading{
+    font-size: 56px;
+    display: inline-block; 
+    text-align: right;
+    margin-bottom: 10px;
+    padding-top: 80px;
+    @include sp{
+        font-size: 28px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 145px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:94vw ;
+        height: 1px;
+        background-color: $lightgrayColor;
+        @include sp{
+            top: 115px;
+            width:85vw ;
+        }
+        @include tab{
+            width: 88vw;
+            
+        }
+        @include pc{
+            width: 90vw;
+        }
+    }
+}
+
+.sec-title-subHeading{
+    color: $accentColor;
+    @include tab{
+        font-size: 14px;
+    }
+}
+
+.sec-center{
+    text-align: center;
+}
+
+
+@media screen and (max-width:1080px) {
+    .title-top{
+        font-size: 68px;
+    }
+    .title-sub{
+        font-size: 54px;
+    }
+}
+@media screen and (max-width:768px){
+   .title-top{
+    font-size: 50px;
+   }
+   .title-sub{
+    font-size: 38px;
+   }
+   
+   #mainvisual{
+   height: 100vh;
+   }
+ 
+}
+

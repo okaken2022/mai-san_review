@@ -1,0 +1,38 @@
+@use "./config" as *;
+
+
+$maxbigpc: 1604px;
+$bigpc:1603px;
+$pc: 1080px;
+$tab: 768px;
+$sp: 480px;
+
+@mixin maxbigpc{
+ @media screen and (min-width:$maxbigpc) {
+  @content;
+ }
+}
+
+@mixin bigpc {
+  @media screen and (max-width: ($bigpc)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}

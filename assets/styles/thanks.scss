@@ -1,0 +1,41 @@
+@use "pages/thanks";
+@use "global/mixin" as*;
+
+$accentColor:#71C732;
+$baseColor:#EEEFEA;
+$grayColor:#686868;
+$darkgrayColor:#DBDBDB;
+$lightgrayColor:#B3B3B3;
+$greenColor:#2AA83A;
+$blackColor:#000000;
+$yellowColor:#DBFF0D;
+$whiteColor:#ffffff;
+
+.thanks-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    
+}
+
+.thanks-text {
+    text-align: center;
+    width: 100%;
+}
+.thanks-content p{
+    font-size: 20px;
+    line-height: 50px;
+    @include tab{
+        font-size: 16px;
+        
+    }
+}
+
+.thanks-section{
+    height: 100vh;
+    background-color: $baseColor;
+   
+}
+

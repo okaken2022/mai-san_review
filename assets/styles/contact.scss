@@ -1,0 +1,104 @@
+@use "pages/contact";
+@use "global/mixin" as*;
+
+$accentColor:#71C732;
+$baseColor:#EEEFEA;
+$grayColor:#686868;
+$darkgrayColor:#DBDBDB;
+$lightgrayColor:#B3B3B3;
+$greenColor:#2AA83A;
+$blackColor:#000000;
+$yellowColor:#DBFF0D;
+$whiteColor:#ffffff;
+
+
+.contact-section-form{
+    background-color: $baseColor;
+    padding-bottom: 60px;
+}
+
+.contact-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    p{
+        @include tab{
+        font-size: 14px;
+    }
+}
+}
+.category-contact-section{
+    background-color: $baseColor;
+    padding-bottom: 40px;
+   
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    textarea{
+        background-color: $whiteColor;
+        border: 1px solid $darkgrayColor;
+        margin-bottom: 16px;
+        padding: 10px 10px;
+      }
+      }
+    
+
+.haveto {
+    color: $grayColor;
+}
+.haveto span{
+    background-color: #C7000B;
+    padding: 3px 8px;
+    color: $whiteColor;
+    margin-left: 8px;
+    font-size:12px ;
+}
+
+.wpcf7-validates-as-required,
+.wpcf7-validates-as-required ,
+.wpcf7-validates-as-email{
+    background-color: $whiteColor;
+    border: 1px solid $darkgrayColor;
+    margin-bottom: 16px;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px 10px;
+    @include tab{
+        width: 100%
+    }
+}
+
+.contact-form-check{
+    display: flex;
+    justify-content: center;
+    color: $grayColor;
+    margin-top: 80px;
+    width:100%;
+    p{
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 16px;
+        padding: 10px 10px;
+        
+        }
+}
+
+.inquiry {
+    margin-bottom: 60px;
+    font-size: 16px;
+    @include tab{
+        font-size: 14px;
+    }
+    th,td{
+        width:600px; 
+    }
+    p{
+        padding-bottom: 10px;
+    }
+}
+.contact-confirm{
+    padding-bottom: 0;
+}

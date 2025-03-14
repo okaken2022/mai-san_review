@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.works-section {
+  background-color: #EEEFEA;
+  padding: 80px 0;
+}
+
+.works-slider {
+  padding: 0 30px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .splide__slide img {
+    max-width: 94%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.splide__arrow {
+  background: transparent;
+}
+
+.splide__arrow--prev {
+  left: -0.8em;
+}
+
+.splide__arrow--next {
+  right: -0.8em;
+}
+
+.splide__arrow {
+  width: 50px;
+  height: 50px;
+}
+
+.splide__arrow svg {
+  width: 70%;
+  height: 70%;
+}
+
+.works-category-section {
+  background-color: #EEEFEA;
+  padding-bottom: 60px;
+}
+
+.works-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+@media screen and (max-width: 480px) {
+  .works-category {
+    margin: 0 10px;
+  }
+}
+
+.works-category-contents {
+  margin: 80px 0;
+}
+
+.works-category-list {
+  width: 25%;
+  min-width: 300px;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px #686868;
+  transition: 0.3s;
+}
+.works-category-list:hover {
+  transform: scale(1.1);
+}
+
+.works-image-title {
+  padding-bottom: 10px;
+}
+
+.works-image-language {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.pagination-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.works-details-section {
+  background-color: #EEEFEA;
+}
+
+.works-details-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.works-details-image {
+  width: 60%;
+  max-width: 600px; /* 最大幅を設定 */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.works-details-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* アスペクト比を保持しながらカバー */
+  display: block;
+  transition: transform 0.3s ease; /* ホバー時の変化をスムーズに */
+}
+
+.works-details-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .works-details-title {
+    font-size: 18px;
+  }
+}
+
+.details-text-list {
+  margin: 60px auto;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .details-text-list {
+    width: 100%;
+  }
+}
+
+.details-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  align-self: center;
+  border-bottom: 1px solid #B3B3B3;
+  font-size: 16px;
+}
+.details-text span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .details-text {
+    font-size: 14px;
+  }
+}
+
+.works-details-url {
+  gap: 10px;
+}
+.works-details-url a {
+  text-decoration: underline;
+  opacity: 0.8;
+  word-break: break-all; /* 長いURLを強制的に改行 */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  flex: 1;
+  min-width: 0; /* flexアイテムの最小幅を0に設定 */
+}/*# sourceMappingURL=works.css.map */
