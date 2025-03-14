@@ -17,9 +17,11 @@ $yellowColor:#DBFF0D;
     align-items: center;
     gap: 20px;
 }
+
 .about-image img{
     width: 160px;
     height: 160px;
+// Review: セレクタの中にメディアクエリを記述していること、ミックスインを使用していることがとてもいいです🙆‍♂️
     @include tab{
         width: 100px;
         height:100px;

@@ -1,3 +1,6 @@
+<!--Review: このファイルどこで使用していますか？？ -->
+<!--Review: このファイル名はWordPressのテンプレート階層では「contactというカテゴリーのアーカイブページ」を意味します。 -->
+<!-- Review: 使用していないファイルは削除しましょう！ -->
 <?php get_header(); ?>
 
 <div class="category-contact-section">

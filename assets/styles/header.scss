@@ -44,6 +44,7 @@ $whiteColor:#ffffff;
  }
 }
 
+// Review: 他のファイルでは、セレクタの中にミックスインを使用してメディアクエリを管理しています！そちらの書き方を参考にして、以下も修正することをお勧めします！
 
 @media screen and (max-width:768px){
     .navi{
