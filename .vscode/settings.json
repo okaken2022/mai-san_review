@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[php]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.requireConfig": true,
+    "phpSniffer.standard": "WordPress",
+    "phpSniffer.run": "onType",
+    "phpSniffer.executablesFolder": "./vendor/bin"
+}

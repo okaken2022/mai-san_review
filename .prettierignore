@@ -1,0 +1,13 @@
+# 外部プラグインやライブラリは除外
+vendor/
+node_modules/
+assets/vendor/
+
+# ビルドされたファイル
+*.min.js
+*.min.css
+*.map
+
+# WordPress関連の一部ファイル
+wp-config.php
+wp-content/uploads/ 

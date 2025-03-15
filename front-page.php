@@ -3,13 +3,13 @@
 <main>
 <div id="mainvisual">
     <div class ="mainvisual-image">
-    <?php 
-        $default_image_id = 540; // メディアライブラリの実際の画像IDに変更してください
-        echo wp_get_attachment_image($default_image_id, 'full', false, array(
-            'loading' => 'eager',
-            'alt' => 'メインビジュアル'
-        ));
-        ?>
+    <?php
+    $default_image_id = 540; // メディアライブラリの実際の画像IDに変更してください
+    echo wp_get_attachment_image($default_image_id, 'full', false, [
+        'loading' => 'eager',
+        'alt' => 'メインビジュアル',
+    ]);
+    ?>
 
         
     </div>

@@ -12,37 +12,33 @@
         <div class="works-category-contents">
             <ul class="works-category">
                 <?php
-                $args = array(
+                $args = [
                     'posts_per_page' => 6,
                     'paged' => $paged,
-                    'category_name' => 'works', 
-                );
+                    'category_name' => 'works',
+                ];
                 $query = new WP_Query($args);
                 if ($query->have_posts()):
-                    while ($query->have_posts()): $query->the_post();
-                ?>
+                    while ($query->have_posts()):
+                        $query->the_post(); ?>
                         <li class="works-category-list">
                             <a href="<?php the_permalink(); ?>" alt="サイト">
                                 <p class="works-image-title">サイト名：<?php the_title(); ?></p>
                                 <img src="<?php the_post_thumbnail_url('full'); ?>" alt="WEB画像">
                             </a>
                         </li>
-                <?php 
-                    endwhile;
-                ?>
+                <?php
+                    endwhile; ?>
             </ul>
             
             <div class="pagination-wrapper">
-                <?php 
-                if (function_exists('wp_pagenavi')) {
-                    wp_pagenavi(array('query' => $query));
-                } 
-                ?>
+                <?php if (function_exists('wp_pagenavi')) {
+                    wp_pagenavi(['query' => $query]);
+                } ?>
             </div>
-            <?php 
-                wp_reset_postdata();
-                endif; 
-            ?>
+            <?php wp_reset_postdata();
+                endif;
+                ?>
         </div>
 
         <a href="<?php echo esc_url(home_url()); ?>" class="btn">Top</a>
