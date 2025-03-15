@@ -14,7 +14,9 @@
 <body>
     <header id="header">
     <div class="header-inner wrapper">
-      <div class="site-title"><a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/image/logo3.svg" alt="myportfolio"></a></div>
+      <div class="site-title"><a href="<?php echo esc_url(
+          home_url(),
+      ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/image/logo3.svg" alt="myportfolio"></a></div>
       <nav class="navi scroll-nav">
         <ul class="navi-menu">
         <li><a href="/#works" class="menu-title">Works</a></li>

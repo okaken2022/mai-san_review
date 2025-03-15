@@ -1,3 +1,6 @@
+/* Review: これらのcssファイルは実際にはfunctions.phpで読み込まれていません。 */
+/* Review: about.scssなどは、pagesフォルダに移動してください。そうすると、不要なcssファイルがコンパイルされなくなります！ */
+
 .about-contents {
   display: flex;
   justify-content: center;
@@ -9,6 +12,7 @@
   width: 160px;
   height: 160px;
 }
+
 @media screen and (max-width: 768px) {
   .about-image img {
     width: 100px;

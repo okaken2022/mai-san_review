@@ -10,19 +10,22 @@
 
      <div class="thanks-content">
     <?php
-            $args =array(
-                'posts_per_page'=>-1,
-                'category_name'=>'thanks',
-            );
+    $args = [
+        'posts_per_page' => -1,
+        'category_name' => 'thanks',
+    ];
 
-            $query=new WP_Query($args);
-            if($query->have_posts()):
-                while($query->have_posts()):$query->the_post();
-                ?>
+    $query = new WP_Query($args);
+    if ($query->have_posts()):
+        while ($query->have_posts()):
+            $query->the_post(); ?>
            <div class="thanks-text"><?php the_content(); ?></div>
-            <?php endwhile; ?>
+            <?php
+        endwhile; ?>
             <?php wp_reset_postdata(); ?>
-            <?php endif; ?>
+            <?php
+    endif;
+    ?>
     </div>
     <a href="<?php echo esc_url(home_url()); ?>" class="btn">Top</a>
     </div>

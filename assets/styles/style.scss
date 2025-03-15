@@ -1,3 +1,4 @@
+// Review: このファイルは、@useでファイルを呼び出す記述だけにしましょう！
 @charset"UTF-8";
 
 @use "global/common";
@@ -16,7 +17,7 @@
 @use "footer";
 
 
-
+// Review: 以下の記述は、適切なファイルにそれぞれ移動するか、新規作成してください！
 @font-face{
     font-family: 'MyFont';
     src: url('/assets/myfont.woff')format('wolf');
